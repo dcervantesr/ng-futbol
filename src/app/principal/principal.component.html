@@ -1,2 +1,16 @@
-<p>principal works!</p>
-<h1>Hola</h1>
+<h1> {{ titulo }} </h1>
+
+<input [type]="tipoCampo" [disabled]="desabilitado" (click)="ponerTexto()">
+
+<p *ngIf="desabilitado">Hola</p>
+
+<div *ngIf="desabilitado; else bloqueSino">
+  Contenido a mostrar si se cumple la condición.
+  </div>
+  <ng-template #bloqueSino>
+  Contenido a mostrar si no se cumple la condición.
+  </ng-template>
+
+<ol>
+  <li *ngFor="let item of colores" [ngStyle]="{ 'color': getColor(item) }" [ngClass]="{ 'texto_color': getClase(item) }">{{ item }}</li>
+</ol>

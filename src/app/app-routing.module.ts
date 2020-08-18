@@ -3,7 +3,8 @@ import { Routes, RouterModule } from '@angular/router';
 import { PrincipalComponent } from './principal/principal.component';
 
 const routes: Routes = [
-  {path: '', component: PrincipalComponent}
+  { path: '', component: PrincipalComponent},
+  { path: 'jugadores', loadChildren: () => import('./jugadores/jugadores.module').then(m => m.JugadoresModule)}
 ];
 
 @NgModule({
