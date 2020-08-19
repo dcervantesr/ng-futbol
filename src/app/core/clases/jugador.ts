@@ -3,6 +3,8 @@ export class Jugador {
     public nombre: string,
     public apellido: string,
     public edad: number,
-    public posicion: string
+    public posicion: string,
+    public imagen: string,
+    public numero: number
   ) {}
 }

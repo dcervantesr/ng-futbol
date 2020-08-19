@@ -4,7 +4,8 @@ import { PrincipalComponent } from './principal/principal.component';
 
 const routes: Routes = [
   { path: '', component: PrincipalComponent},
-  { path: 'jugadores', loadChildren: () => import('./jugadores/jugadores.module').then(m => m.JugadoresModule)}
+  { path: 'jugadores', loadChildren: () => import('./jugadores/jugadores.module').then(m => m.JugadoresModule)},
+  { path: '**', component: PrincipalComponent}
 ];
 
 @NgModule({

@@ -1,7 +1,12 @@
 <mat-sidenav-container class="sidenav-container">
   <mat-sidenav-content>
     <mat-toolbar color="primary">
-      <span>angular</span>
+      <span>Clara Jackson Universitario</span>
+      <div class="menu">
+        <a mat-button [routerLink]="['nosotros']" routerLinkActive="router-link-active" >Nosotros</a>
+        <a mat-button [routerLink]="['fixture']" routerLinkActive="router-link-active" >Fixture</a>
+        <a mat-button [routerLink]="['jugadores']" routerLinkActive="router-link-active" >Jugadores</a>
+      </div>
     </mat-toolbar>
     <router-outlet></router-outlet>
   </mat-sidenav-content>

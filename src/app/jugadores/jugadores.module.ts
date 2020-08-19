@@ -4,12 +4,14 @@ import { ListaComponent } from './lista/lista.component';
 import { FormularioComponent } from './formulario/formulario.component';
 import { JugadoresService } from '../core/servicios/jugadores.service';
 import { JugadoresRoutingModule } from './jugadores.routing';
+import {MatCardModule} from '@angular/material/card';
 
 @NgModule({
   declarations: [ListaComponent, FormularioComponent],
   imports: [
     CommonModule,
-    JugadoresRoutingModule
+    JugadoresRoutingModule,
+    MatCardModule
   ],
   providers: [
     JugadoresService
