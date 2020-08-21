@@ -11,4 +11,17 @@
     </mat-card>
   </div>
 
+    <eco-fab-speed-dial animationMode="'scale'" #myFab (mouseenter)="myFab.open = true" (mouseleave)="myFab.open = false">
+      <eco-fab-speed-dial-trigger spin="true">
+          <button mat-fab><mat-icon>menu</mat-icon></button>
+      </eco-fab-speed-dial-trigger>
+
+      <eco-fab-speed-dial-actions>
+          <button mat-mini-fab><mat-icon>add</mat-icon></button>
+          <!-- <button mat-mini-fab><mat-icon>edit</mat-icon></button>
+          <button mat-mini-fab><mat-icon>search</mat-icon></button> -->
+      </eco-fab-speed-dial-actions>
+  </eco-fab-speed-dial>
+
+
 </div>

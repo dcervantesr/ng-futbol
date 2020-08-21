@@ -14,3 +14,14 @@
   flex-flow: wrap;
   justify-content: space-around;
 }
+
+.contenedor-fab-button {
+  position:relative;
+}
+
+eco-fab-speed-dial {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  z-index: 100;
+}
