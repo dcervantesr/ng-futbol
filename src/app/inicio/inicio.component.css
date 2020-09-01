@@ -6,8 +6,10 @@
   width: 200px;
 }
 
-.sidenav .mat-toolbar {
-  background: inherit;
+.mat-toolbar {
+  /* background: inherit; */
+  background-color: ROYALBLUE;
+  color: white;
 }
 
 .mat-toolbar.mat-primary {
@@ -18,4 +20,9 @@
 
 .menu {
   margin-left: auto;
+}
+
+.menu a:hover {
+  color: white;
+  background-color: black;
 }

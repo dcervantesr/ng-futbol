@@ -10,3 +10,12 @@
 .mat-icon-button {
   margin: 30px;
 }
+
+a:hover {
+  color: white;
+  background-color: ROYALBLUE;
+}
+
+:host /deep/ .mat-button-wrapper {
+  vertical-align: sub;
+}
