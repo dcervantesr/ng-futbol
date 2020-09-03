@@ -1,0 +1,21 @@
+<div class="noticias">
+  <mat-card class="mat-elevation-z8" *ngFor="let item of noticias">
+    <mat-card-header>
+      <mat-card-title>
+        {{ item.titulo }}
+      </mat-card-title>
+      <mat-card-subtitle>
+        {{ item.fecha | date }}
+      </mat-card-subtitle>
+    </mat-card-header>
+    <img mat-card-image src="../../../assets/imganes/{{item.imagen}}" alt="{{item.titulo}}">
+    <mat-card-content>
+      <p class="subtitulo">
+        {{item.subtitulo}}
+      </p>
+      <p class="texto">
+        {{ item.texto }}
+      </p>
+    </mat-card-content>
+  </mat-card>
+</div>

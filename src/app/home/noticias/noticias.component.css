@@ -1,0 +1,30 @@
+.mat-card {
+  max-width: 300px;
+  margin: 10px;
+  max-height: 500px;
+}
+
+.noticias {
+  margin: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.mat-card-subtitle {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  max-width: 290px;
+}
+
+.texto {
+  height: 100px;
+  overflow: auto;
+}
+
+.subtitulo {
+  font-style: italic;
+  font-weight: 500;
+  font-size: small;
+}
