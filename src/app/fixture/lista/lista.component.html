@@ -1,1 +1,18 @@
-<p>lista works!</p>
+<div class="tabla-fixture">
+  <mat-card class="mat-elevation-z8" *ngFor="let item of fixtures">
+    <h2>{{item.fecha}}</h2>
+    <mat-table [dataSource]="item.juegos">
+     <!-- Position Column -->
+     <ng-container matColumnDef="equipoA">
+       <mat-cell *matCellDef="let element"> {{element.equipoA}} </mat-cell>
+     </ng-container>
+
+     <!-- Name Column -->
+     <ng-container matColumnDef="equipoB">
+       <mat-cell *matCellDef="let element"> {{element.equipoB}} </mat-cell>
+     </ng-container>
+
+     <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
+   </mat-table>
+   </mat-card>
+</div>

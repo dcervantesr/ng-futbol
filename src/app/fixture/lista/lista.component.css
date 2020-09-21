@@ -1,0 +1,21 @@
+.mat-card {
+  max-width: 300px;
+  margin: 10px;
+  max-height: 500px;
+}
+
+
+.mat-column-equipoB {
+  text-align: center;
+  padding-left: 10px;
+}
+
+h2 {
+  text-align: center
+}
+
+.tabla-fixture {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
